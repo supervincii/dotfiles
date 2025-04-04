@@ -16,6 +16,7 @@
  auto-save-default nil               ;; Don't auto-save files
  initial-scratch-message nil         ;; Don't show a message when opening a *scratch* buffer
  confirm-kill-emacs 'y-or-n-p        ;; Ask before exiting Emacs
+ custom-file "/dev/null"             ;; Don't save customizations, just delete them
  scroll-step 1)                      ;; Don't jump around when scrolling
 
 (setq-default
@@ -29,7 +30,6 @@
 (scroll-bar-mode -1)
 (blink-cursor-mode -1)
 (tooltip-mode -1)
-(global-hl-line-mode)
 (column-number-mode)
 (global-display-line-numbers-mode t)
 (global-visual-line-mode t)
@@ -40,6 +40,9 @@
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-;; Font setting
-(set-face-attribute 'default nil :font "CommitMono-18")
+;; Load the remaining configuration
+(add-to-list 'load-path "~/dotfiles/.config/emacs/supervincii")
+(require 'supervincii-core)
+(require 'supervincii-ui)
 
+(provide 'init)
