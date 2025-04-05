@@ -1,2 +1,4 @@
-/.config/emacs/auto-save-list
-/.config/emacs/eln-cache
+# Emacs ignore list
+.config/emacs/auto-save-list
+.config/emacs/eln-cache
+.config/emacs/elpa

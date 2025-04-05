@@ -1,4 +1,4 @@
-;;; supervincii-core -- Core functionality -*- lexical-binding: t; -*-
+;;; supervincii-core -- core functionality -*- lexical-binding: t; -*-
 
 (add-to-list 'load-path "~/dotfiles/.config/emacs/supervincii/core")
 

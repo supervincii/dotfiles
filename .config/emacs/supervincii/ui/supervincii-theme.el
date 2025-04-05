@@ -1,7 +1,9 @@
-;;; supervincii-theme --- Theme configuration -*- lexical-binding: t; -*-
+;;; supervincii-theme --- theme configuration -*- lexical-binding: t; -*-
+
+(require 'supervincii-package)
 
 ;; Font setting
-(set-face-attribute 'default nil :font "CommitMono-18")
+(set-face-attribute 'default nil :font "CommitMono-16")
 
 (use-package ef-themes
   :config

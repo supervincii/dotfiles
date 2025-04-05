@@ -20,29 +20,30 @@
  scroll-step 1)                      ;; Don't jump around when scrolling
 
 (setq-default
- fill-column 80
- line-spacing 5
- indent-tabs-mode nil
- cursor-in-non-selected-windows nil)
+ cursor-in-non-selected-windows nil     ;; Reduce distraction by not showing cursor in non-selected windows
+ fill-column 80                         ;; Set fill column at column 80
+ line-spacing 8                         ;; Put a bit more padding between lines for readability
+ indent-tabs-mode nil)                  ;; Use spaces instead of tabs for indentation
 
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (blink-cursor-mode -1)
-(tooltip-mode -1)
+(tooltip-mode -1)                       ;; Show tips in the minibuffer
 (column-number-mode)
-(global-display-line-numbers-mode t)
-(global-visual-line-mode t)
+(global-display-line-numbers-mode t)    ;; Show line numbers everywhere
+(global-visual-line-mode t)             ;; Enable visual line mode globally for word wrapping
 (delete-selection-mode t)
-(electric-pair-mode t)
+(electric-pair-mode t)                  ;; Automatically inserts paren pairs
 
-(global-display-fill-column-indicator-mode 1)
+(global-display-fill-column-indicator-mode 1) ;; Show fill column
 
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
+(add-to-list 'default-frame-alist '(fullscreen . maximized)) ;; Maximize Emacs on initialization
 
 ;; Load the remaining configuration
 (add-to-list 'load-path "~/dotfiles/.config/emacs/supervincii")
 (require 'supervincii-core)
 (require 'supervincii-ui)
+(require 'supervincii-lang)
 
 (provide 'init)
