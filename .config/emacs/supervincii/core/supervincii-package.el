@@ -1,4 +1,6 @@
 ;;; supervincii-package --- package management -*- lexical-binding: t; -*-
+;;; Commentary:
+;;; Code:
 
 ;; Initialize package sources
 (require 'package)
@@ -15,3 +17,4 @@
 (setq use-package-always-ensure t)
 
 (provide 'supervincii-package)
+;;; supervincii-package.el ends here

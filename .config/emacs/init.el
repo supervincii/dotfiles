@@ -1,4 +1,6 @@
 ;;; init --- initialization -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
 
 ;; Speed up initial startup
 ;; Speeding up Emacs startup is done by tweaking garbage collection settings. Most notably the threshold so garbage collection happens less frequently.
@@ -25,16 +27,17 @@
  line-spacing 8                         ;; Put a bit more padding between lines for readability
  indent-tabs-mode nil)                  ;; Use spaces instead of tabs for indentation
 
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
-(blink-cursor-mode -1)
+(tool-bar-mode -1)                      ;; Disable the tool bar
+(menu-bar-mode -1)                      ;; Disable the menu bar
+(scroll-bar-mode -1)                    ;; Disable the scroll bar
+(blink-cursor-mode -1)                  ;; Disable blinking cursor
 (tooltip-mode -1)                       ;; Show tips in the minibuffer
-(column-number-mode)
+(column-number-mode)                    ;; Show column number in the modeline
 (global-display-line-numbers-mode t)    ;; Show line numbers everywhere
 (global-visual-line-mode t)             ;; Enable visual line mode globally for word wrapping
-(delete-selection-mode t)
+(delete-selection-mode t)               ;; 
 (electric-pair-mode t)                  ;; Automatically inserts paren pairs
+(which-key-mode t)                      ;; Enable key binding help
 
 (global-display-fill-column-indicator-mode 1) ;; Show fill column
 
@@ -44,6 +47,8 @@
 (add-to-list 'load-path "~/dotfiles/.config/emacs/supervincii")
 (require 'supervincii-core)
 (require 'supervincii-ui)
+(require 'supervincii-editor)
 (require 'supervincii-lang)
 
 (provide 'init)
+;;; init.el ends here
