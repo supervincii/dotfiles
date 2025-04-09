@@ -1,4 +1,6 @@
 ;;; supervincii-completion --- autocompletion -*- lexical-binding: t; -*-
+;;; Commentary:
+;;; Code:
 
 (require 'supervincii-package)
 
@@ -11,3 +13,4 @@
   (global-company-mode))
 
 (provide 'supervincii-completion)
+;;; supervincii-completion.el ends here
