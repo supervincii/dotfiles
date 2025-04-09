@@ -37,7 +37,6 @@
 (global-visual-line-mode t)             ;; Enable visual line mode globally for word wrapping
 (delete-selection-mode t)               ;; 
 (electric-pair-mode t)                  ;; Automatically inserts paren pairs
-(which-key-mode t)                      ;; Enable key binding help
 
 (global-display-fill-column-indicator-mode 1) ;; Show fill column
 

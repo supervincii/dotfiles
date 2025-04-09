@@ -1,4 +1,6 @@
 ;;; supervincii-theme --- theme configuration -*- lexical-binding: t; -*-
+;;; Commentary:
+;;; Code:
 
 (require 'supervincii-package)
 
@@ -10,3 +12,4 @@
   (load-theme 'ef-light :no-confirm))
 
 (provide 'supervincii-theme)
+;;; supervincii-theme.el ends here

@@ -4,6 +4,10 @@
 
 (require 'supervincii-package)
 
+(use-package which-key
+  :init
+  (which-key-mode))
+
 (use-package vertico
   :init
   (vertico-mode))
