@@ -19,5 +19,8 @@
                  clojure-mode))
         (add-to-list 'lsp-tailwindcss-major-modes tw-major-mode)))
 
+(setq-default js-indent-level 4
+              typescript-ts-mode-indent-offset 4)
+
 (provide 'supervincii-web)
 ;;; supervincii-web.el ends here

@@ -7,6 +7,7 @@
 (require 'supervincii-package)
 (require 'supervincii-term)
 (require 'supervincii-vc)
+(require 'supervincii-org)
 
 (provide 'supervincii-core)
 ;;; supervincii-core.el ends here

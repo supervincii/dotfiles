@@ -34,5 +34,10 @@
 (use-package lsp-treemacs
   :commands lsp-treemacs-errors-list)
 
+(use-package yasnippet
+  :config
+  (yas-reload-all)
+  :hook ((lsp-mode . yas-minor-mode)))
+
 (provide 'supervincii-lsp)
 ;;; supervincii-lsp.el ends here
