@@ -9,6 +9,7 @@
 (require 'supervincii-treesitter)
 (require 'supervincii-minibuffer)
 (require 'supervincii-lsp)
+(require 'supervincii-verb)
 
 (provide 'supervincii-editor)
 ;;; supervincii-editor.el ends here
