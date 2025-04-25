@@ -7,9 +7,13 @@
 ;; Font setting
 (set-face-attribute 'default nil :font "CommitMono-16")
 
-(use-package ef-themes
+(use-package doom-themes
   :config
-  (load-theme 'ef-light :no-confirm))
+  (load-theme 'doom-oksolar-light :no-confirm))
+
+;; (use-package ef-themes
+;;   :config
+;;   (load-theme 'ef-light :no-confirm))
 
 (provide 'supervincii-theme)
 ;;; supervincii-theme.el ends here

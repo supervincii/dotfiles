@@ -13,6 +13,8 @@
   (lsp-eldoc-render-all t)
   :hook
   ((lsp-mode . lsp-enable-which-key-integration)
+   (c-ts-mode . lsp)
+   (c++-ts-mode . lsp)
    (tsx-ts-mode . lsp)
    (typescript-ts-mode . lsp)
    (js-ts-mode . lsp))

@@ -5,6 +5,7 @@
 (add-to-list 'load-path "~/dotfiles/.config/emacs/supervincii/lang")
 
 (require 'supervincii-web)
+(require 'supervincii-c)
 (require 'supervincii-lisp)
 
 (provide 'supervincii-lang)
