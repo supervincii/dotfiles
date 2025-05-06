@@ -9,7 +9,7 @@
 
 (use-package doom-themes
   :config
-  (load-theme 'doom-oksolar-light :no-confirm))
+  (load-theme 'doom-Iosvkem :no-confirm))
 
 ;; (use-package ef-themes
 ;;   :config
