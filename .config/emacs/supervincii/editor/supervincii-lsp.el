@@ -17,7 +17,11 @@
    (c++-ts-mode . lsp)
    (tsx-ts-mode . lsp)
    (typescript-ts-mode . lsp)
-   (js-ts-mode . lsp))
+   (js-ts-mode . lsp)
+   (jtsx-jsx-mode . lsp)
+   (jtsx-tsx-mode . lsp)
+   (jtsx-typescript-mode . lsp)
+   (css-ts-mode . lsp))
 
   :commands lsp)
 

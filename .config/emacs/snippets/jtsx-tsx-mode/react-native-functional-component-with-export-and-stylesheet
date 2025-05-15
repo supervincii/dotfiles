@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: React Native Functional Component with Export and Stylesheet
+# key: rnfes
+# --
+
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+const ${1:`(capitalize (replace-regexp-in-string "\\[\\|\\]" "" (file-name-base)))`} = () => {
+    return (
+        <View>
+            <Text>${1:`(capitalize (replace-regexp-in-string "\\[\\|\\]" "" (file-name-base)))`}</Text>
+        </View>
+    )
+}
+
+export default ${1:`(capitalize (replace-regexp-in-string "\\[\\|\\]" "" (file-name-base)))`}
+const styles = StyleSheet.create({})
