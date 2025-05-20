@@ -30,7 +30,7 @@
   (lsp-ui-sideline-enable nil)
   (lsp-ui-doc-enable t)
   (lsp-ui-doc-delay 0)
-  (lsp-ui-doc-position 'bottom)
+  (lsp-ui-doc-position 'top)
   (lsp-ui-doc-show-with-cursor t)
   (lsp-ui-doc-show-with-mouse t)
   (lsp-ui-doc-use-childframe nil)
@@ -44,6 +44,8 @@
   :config
   (yas-reload-all)
   :hook ((lsp-mode . yas-minor-mode)))
+
+(setq global-eldoc-mode nil)
 
 (provide 'supervincii-lsp)
 ;;; supervincii-lsp.el ends here
