@@ -9,7 +9,7 @@
 
 (use-package doom-themes
   :config
-  (load-theme 'doom-Iosvkem :no-confirm))
+  (load-theme 'doom-gruvbox :no-confirm))
 
 ;; (use-package ef-themes
 ;;   :config

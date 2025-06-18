@@ -11,7 +11,7 @@
               tab-width 4
               c-basic-offset 4
               indent-tabs-mode nil)
-  (setq-local c-ts-mode-indent-style "linux"
+  (setq-local c-ts-mode-indent-style 'linux
               c-ts-mode-indent-offset 4))
 
 (add-hook 'c-mode-hook 'sv/c-setup)

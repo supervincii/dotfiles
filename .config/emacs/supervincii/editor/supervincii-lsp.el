@@ -10,7 +10,6 @@
   :custom
   (lsp-prefer-flymake nil)
   (lsp-enable-snippet t)
-  (lsp-eldoc-render-all t)
   :hook
   ((lsp-mode . lsp-enable-which-key-integration)
    (c-ts-mode . lsp)
