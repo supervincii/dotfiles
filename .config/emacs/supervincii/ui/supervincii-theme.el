@@ -5,11 +5,11 @@
 (require 'supervincii-package)
 
 ;; Font setting
-(set-face-attribute 'default nil :font "CommitMono-16")
+(set-face-attribute 'default nil :font "Monoid-14")
 
 (use-package doom-themes
   :config
-  (load-theme 'doom-gruvbox :no-confirm))
+  (load-theme 'doom-dracula :no-confirm))
 
 ;; (use-package ef-themes
 ;;   :config
